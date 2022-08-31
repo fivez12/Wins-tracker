@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.4/css/bulma.min.css">
+    <title>Keep the score</title>
+    <link rel="stylesheet" href="css/mystyles.css">
+    <style>
+      .winner {
+        color: green;
+      }
+      .loser {
+        color: red;
+      }
+    </style>
+</head>
+<body >
+  <section class="section my-6 ">
+    <!-- card -->
+    <div class="container ">
+        <div class="columns ">
+            <div class="column is-half is-offset-one-quarter has-text-centered ">
+                <div class="card ">
+                  <div class="card-image ">
+                    <figure  class="image is-16by9">
+                      <iframe id="vid"  class="has-ratio " width="640" height="360" src="https://player.vimeo.com/video/668087746?autoplay=1&amp;loop=1&amp;title=0&amp;byline=0&amp;portrait=0&amp;background=1&amp;muted=1" frameborder="0"  allowfullscreen  ></iframe>
+                    </figure>
+                  </div>
+                    <header class="card-header ">
+                      <p class="card-header-title is-size-6 has-text-weight-bold is-centered ">
+                        My GU wins tracker
+                      </p>
+                    </header>
+                    <div class="card-content">
+                      <div class="content">
+                        <h1 class="title is-3"><span id="p1Display">0</span> out of <span id="p2Display">18</span></h1>
+                        
+                      </div>
+                    </div>
+                    <footer class="card-footer  ">
+                        <button id="p1Button" class="is-primary button card-footer-item mx-1 my-1 is-family-code has-text-weight-semibold">+1 Win</button>
+                        <button id="p2Button" class="is-info button card-footer-item  mx-1 my-1 is-family-code has-text-weight-semibold">-1 Win</button>
+                        <button id="reset" class="is-danger button card-footer-item  mx-1 my-1 is-family-code has-text-weight-semibold">Reset</button>
+                     
+                    </footer>
+                  </div>
+            </div>
+        </div>
+    </div>
+  </section>
+    <script src="app.js"></script>
+</body>
+</html>
